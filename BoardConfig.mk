@@ -95,4 +95,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 
+# USB
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+
 
