@@ -21,6 +21,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_TARGET_VNDK_VERSION := 33
 
 # A/B
+PRODUCT_PACKAGES += \
+    otapreopt_script
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -43,7 +46,6 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Update Engine
 PRODUCT_PACKAGES += \
-    otapreopt_script
     update_engine \
     update_engine_sideload \
     update_verifier
