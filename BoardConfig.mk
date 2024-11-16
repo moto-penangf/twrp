@@ -7,6 +7,13 @@
 
 DEVICE_PATH := device/motorola/penangf
 
+
+# Build Hack
+BUILD_BROKEN_DUP_RULES := true
+
+# Building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
