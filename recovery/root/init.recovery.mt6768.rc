@@ -21,7 +21,7 @@ on early-fs
     start vold
 
 on late-fs
-    mount_all /first_stage_ramdisk/fstab.mt6833 --late
+    mount_all /first_stage_ramdisk/fstab.mt6768 --late
 
 
 on fs && property:ro.debuggable=0
