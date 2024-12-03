@@ -52,6 +52,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1
 
+# Bootctrl
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl.recovery
+
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
@@ -72,6 +77,11 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 # Keystore2
 PRODUCT_PACKAGES += \
     android.system.keystore2
+
+# Mtk plpath utils
+PRODUCT_PACKAGES += \
+    mtk_plpath_utils \
+    mtk_plpath_utils.recovery
 
 # Update Engine
 PRODUCT_PACKAGES += \
